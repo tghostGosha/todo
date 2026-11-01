@@ -1,0 +1,28 @@
+.button {
+  border: 0;
+  font: inherit;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease, box-shadow .18s ease;
+}
+.button:focus-visible { outline: 3px solid rgba(91, 99, 230, .28); outline-offset: 3px; }
+.button--primary {
+  min-height: 52px;
+  padding: 0 23px;
+  border-radius: 14px;
+  color: #fff;
+  background: #5b63e6;
+  font-weight: 650;
+  box-shadow: 0 7px 16px rgba(91, 99, 230, .2);
+}
+.button--primary:hover { background: #4d55d6; transform: translateY(-1px); }
+.button--primary:active { transform: translateY(0); }
+.button--icon {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  color: #9aa0ae;
+  background: transparent;
+}
+.button--icon:hover { color: #d64c61; background: #fff0f2; }
